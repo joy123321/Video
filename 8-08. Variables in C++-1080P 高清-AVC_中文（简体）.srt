@@ -1,0 +1,1751 @@
+1
+00:00:00,009 --> 00:00:00,090
+嗨大家好
+Hegel's of guys,
+
+2
+00:00:00,090 --> 00:00:03,063
+我是cherno，欢迎收看另一个视频 （译者按：这个英文字幕是网易见外自动生成的，有很多错误，请以中文翻译为准，如果要看英文，请切换至英文字幕）
+my name is a churn or welcome to another video.
+
+3
+00:00:03,063 --> 00:00:04,017
+所以
+So,
+
+4
+00:00:04,017 --> 00:00:06,084
+经过漫长的一天的工作，我现在坐在沙发上
+I'm on the couch this time after a long day of work,
+
+5
+00:00:06,084 --> 00:00:08,070
+我以为我弄混了
+thought I mixed it up.
+
+6
+00:00:08,070 --> 00:00:10,089
+让我们来谈谈C++中的变量吧
+Let's talk about variables in safe boss boss.
+
+7
+00:00:10,089 --> 00:00:14,043
+所以当我们用C++写一个程序时
+So when we write a program in C Plus plus,
+
+8
+00:00:14,043 --> 00:00:16,077
+我们希望能够使用数据
+we want to be able to use data.
+
+9
+00:00:16,077 --> 00:00:20,052
+大多数编程的内容都是使用数据
+Most of what programming is about is actually using data.
+
+10
+00:00:20,052 --> 00:00:22,074
+我们操纵数据
+we manipulate data.
+
+11
+00:00:22,074 --> 00:00:25,068
+这就是我们所做的，所以，任何我们在程序中使用的数据
+That's what we do so any kind of data that we use in our program,
+
+12
+00:00:25,068 --> 00:00:27,006
+我们想要改变
+that we want to change,
+
+13
+00:00:27,006 --> 00:00:28,014
+我们想要修改
+that we want to modify,
+
+14
+00:00:28,014 --> 00:00:30,009
+我们想要读和写
+that we want to read and write from.
+
+15
+00:00:30,009 --> 00:00:33,000
+我们需要将这些数据存储在一个叫做变量（variable）的东西中
+We need to store this data in something called a variable.
+
+16
+00:00:33,000 --> 00:00:40,035
+所以变量基本上允许我们给一个存储在内存中的数据一个名字，这样我们就可以继续使用它，打个比方
+so variables basically allow us to name a piece of data that we store in memory so that we can keep using it as an example.
+
+17
+00:00:40,035 --> 00:00:48,096
+假装你在做一个游戏，你的游戏中有一个玩家，然后他的角色在地图上有一个位置信息，角色可以移动
+
+18
+00:00:48,096 --> 00:00:53,001
+所以我们需要把玩家的位置储存在我们的内存里，作为一个变量
+So we need to be able to store the player's position as some kind of variable in our memory,
+
+19
+00:00:53,001 --> 00:00:58,083
+因此当需要在屏幕上显示玩家或者跟场景互动的时候，我们得能看到
+So that when it comes time to draw the player on the screen or interact with the rest of the level we can actually see.
+
+20
+00:00:58,083 --> 00:00:59,016
+嘿
+Hey,
+
+21
+00:00:59,016 --> 00:01:02,046
+玩家到底在哪里！所以我们想要把玩家的位置存在一个变量里
+where on earth is the player so we would want to steal the player's position.
+
+22
+00:01:02,046 --> 00:01:03,024
+在一个变量中
+In a variable.
+
+23
+00:01:03,024 --> 00:01:07,080
+这基本上是用任何语言编程的根本之一
+this is basically one of the fundamentals of writing a program in any language.
+
+24
+00:01:07,080 --> 00:01:11,040
+我们需要能够玩弄数据并存储这些数据
+We need to be able to play with data and store that data.
+
+25
+00:01:11,040 --> 00:01:16,028
+当我们创建一个变量时，它会被存储在内存中的两个地方之一
+Someone when we create a variable is going to be stored in memory in one of two places,
+
+26
+00:01:16,028 --> 00:01:17,043
+栈或堆
+the stack or the heap.
+
+27
+00:01:17,043 --> 00:01:17,091
+别担心
+Don't worry,
+
+28
+00:01:17,091 --> 00:01:22,008
+我们将会有很多视频讨论内存是如何工作的
+we're going to have a lot of videos discussing how memory actually works.
+
+29
+00:01:22,008 --> 00:01:25,041
+所以如果你想找一个更深入的解释
+So if you're looking for a more more of an indepth kind of explanation,
+
+30
+00:01:25,041 --> 00:01:26,052
+绝对会有的
+that will definitely come.
+
+31
+00:01:26,052 --> 00:01:27,003
+但现在
+but for now,
+
+32
+00:01:27,003 --> 00:01:29,028
+只要知道变量确实占据了内存
+just know that variables do occupy memory.
+
+33
+00:01:29,028 --> 00:01:32,025
+也就是我们在电脑中存储数据的地方
+That's where we actually store the data in our computers.
+
+34
+00:01:32,025 --> 00:01:36,063
+在C++中，我们有一些原始数据类型
+Memory in St Louis last were given a bunch of primitive data types.
+
+35
+00:01:36,063 --> 00:01:43,023
+这些原始数据类型基本上构成了我们在程序中存储的任何类型的数据的基础
+These primitive data types essentially formed the building blocks of any kind of data we store in our program.
+
+36
+00:01:43,023 --> 00:01:46,082
+C++给我们提供的每个数据类型都有特定的目的
+each data type The superfluous gives us has a specific purpose.
+
+37
+00:01:46,082 --> 00:01:46,092
+ 
+
+38
+00:01:46,092 --> 00:01:49,002
+虽然它有一个特定的目的
+Whilst it has a specific purpose.
+
+39
+00:01:50,028 --> 00:01:52,089
+但其实你并不非要将它用于那个目的
+You don't actually have to use it for that purpose.
+
+40
+00:01:52,089 --> 00:01:55,074
+这很有趣，因为C++是一种非常强大的语言
+It's interesting because the boss is a very powerful language,
+
+41
+00:01:55,074 --> 00:02:00,096
+这意味着当你真正理解它的时候，它实际上限制很少
+which means there are actually very few rules when you actually get down to it.
+
+42
+00:02:00,096 --> 00:02:02,097
+所以当我在解释变量时
+So when I explained variables,
+
+43
+00:02:02,097 --> 00:02:04,032
+我真正想说的是
+I like to say that really,
+
+44
+00:02:04,032 --> 00:02:09,084
+在C++中，不同的变量类型之间的唯一区别就是大小
+the only distinction between the different variable types you have in simplest loss is the size.
+
+45
+00:02:09,084 --> 00:02:14,007
+这个变量占用多少内存，
+How much memory does this variable occupy when it comes down to it?
+
+46
+00:02:14,007 --> 00:02:17,025
+这真的是这些原始数据类型之间的唯一区别
+That's really the only difference between these primitive data types.
+
+47
+00:02:17,025 --> 00:02:18,015
+它们有多大
+How big are they?
+
+48
+00:02:18,015 --> 00:02:21,012
+让我们进入vs看看一些例子
+Let's go ahead and jump into visual studio and take a look at some examples.
+
+49
+00:02:21,012 --> 00:02:24,036
+实际上我们已经有了一个在使用的变量类型
+so we've actually already got a variable type that we're using here,
+
+50
+00:02:24,036 --> 00:02:29,097
+它代表整数，它允许我们在给定的范围内储存了一个整形数字
+and it stands for integer and at last our store an entire jar in a given range,
+
+51
+00:02:29,097 --> 00:02:31,089
+如果我们想要声明一个新的变量
+if we want to declare a brand new variable,
+
+52
+00:02:31,089 --> 00:02:34,083
+我们可以通过输入变量的类型来实现
+we can do so by typing the type of the variable,
+
+53
+00:02:34,083 --> 00:02:36,051
+给它起个什么名字
+giving it some kind of name,
+
+54
+00:02:36,051 --> 00:02:37,005
+例如
+for example,
+
+55
+00:02:37,005 --> 00:02:39,056
+叫variable，然后给它一个值
+variable and then giving it a value.
+
+56
+00:02:39,056 --> 00:02:41,028
+最后一步是可选的
+Now this last part is optional.
+
+57
+00:02:41,028 --> 00:02:43,065
+你不需要马上给它一个值
+You don't have to give it a value immediately,
+
+58
+00:02:43,065 --> 00:02:45,030
+但现在让我们给它一个值
+but for now let's just give it the value.
+
+59
+00:02:45,030 --> 00:02:45,072
+8
+Eight,
+
+60
+00:02:45,072 --> 00:02:49,047
+传统上，整形是4字节（byte）大小的数据类型
+An integer is the data type that is traditionally four bytes lodge.
+
+61
+00:02:49,047 --> 00:02:52,014
+数据类型的实际大小取决于编译器
+The actual size of a prototype depends on the compiler,
+
+62
+00:02:52,014 --> 00:02:55,028
+所以它可能会不同，取决于你使用的是什么编译器
+so it may be different depending on what compile you're using.
+
+63
+00:02:55,028 --> 00:02:55,083
+最终
+Ultimately,
+
+64
+00:02:55,083 --> 00:02:59,016
+告诉你一个数据会有多大，是编译器的选择
+it's the compiler's choice to tell you how big a doctor is going to be.
+
+65
+00:02:59,016 --> 00:03:05,057
+int类型是为了在一定范围内存储整数，因为它大小是4个字节
+The installer type is meant for storing images in a certain range because it's four bytes lodge.
+
+66
+00:03:05,057 --> 00:03:09,048
+我们被限制在它能存储什么样的数字上
+We are limited as to what kind of numbers are we can stole with it?
+
+67
+00:03:09,048 --> 00:03:10,005
+具体来说
+Specifically,
+
+68
+00:03:10,005 --> 00:03:16,062
+这是一个带符号整数(signed int)，它可以存储的数字范围是负二十亿到正二十亿
+this is something called a signed integer that can store a value of around negative two billion to positive two billion.
+
+69
+00:03:16,062 --> 00:03:22,098
+存储比这更大或更小的东西需要更多的数据来存储，而这个类型是没法支持的
+anything larger or smaller than that is going to require more data to store than this and actually supports.
+
+70
+00:03:22,098 --> 00:03:24,033
+用四个字节的数据
+So with four bytes of data,
+
+71
+00:03:24,033 --> 00:03:27,015
+我们可以在这个范围内存储一个值
+we can store a value between this range.
+
+72
+00:03:27,015 --> 00:03:31,035
+让我们试着把我们的变量打印到控制台，看看它到底是什么
+So let's go ahead and try and print out our variable to the console to see what it actually is.
+
+73
+00:03:31,035 --> 00:03:32,079
+我将用这个实际的变量
+I'll substitute this Hello world.
+
+74
+00:03:32,079 --> 00:03:34,065
+替换这个Helloworld
+With this actual variable.
+
+75
+00:03:34,065 --> 00:03:37,002
+这就是我们如何将一个变量log到控制台的方法
+this is how we can log a variable to the console.
+
+76
+00:03:37,002 --> 00:03:41,079
+让我们按F5来运行程序，你可以看到它打印出了数字8，太好了
+Let's hit our fighter on our program and you can say it prints out the number eight.
+
+77
+00:03:41,079 --> 00:03:43,062
+我们可以继续修改变量
+We can go ahead and modify our variable,
+
+78
+00:03:43,062 --> 00:03:47,085
+例如，把它重新赋值到比如说20
+for example by reassigning it to something else like twenty,
+
+79
+00:03:47,085 --> 00:03:49,089
+让我们继续打印，看看会发生什么
+let's go ahead and print it again and see what happens.
+
+80
+00:03:49,089 --> 00:03:52,050
+所以在这里打印一次，然后这里打印一次
+so what printing at once here and then again here.
+
+81
+00:03:52,050 --> 00:03:53,055
+所以它应该先打印出8，再打印出20
+so we should get the value,
+
+82
+00:03:53,055 --> 00:03:57,003
+你可以看到，如果我们运行我们的程序
+eight printing first and then the value twenty and you can see if we run our program,
+
+83
+00:03:57,003 --> 00:03:58,062
+这正是我们得到的，酷
+that's exactly what we get cool.
+
+84
+00:03:58,062 --> 00:03:58,086
+所以
+So,
+
+85
+00:03:58,086 --> 00:03:59,070
+就像我说的
+as I said,
+
+86
+00:03:59,070 --> 00:04:00,090
+一个INT型数据类型
+an INT data type,
+
+87
+00:04:00,090 --> 00:04:04,041
+你可以存储一个负二十亿和正二十亿之间的值
+you can store a value between negative two billion and positive two billion,
+
+88
+00:04:04,041 --> 00:04:05,031
+所以你可能会问
+so you might be like.
+
+89
+00:04:05,031 --> 00:04:06,006
+为什么
+Why.
+
+90
+00:04:06,006 --> 00:04:07,014
+它是负的
+Is it negative?
+
+91
+00:04:07,014 --> 00:04:08,082
+二十亿到正二十亿之间？
+Two billion and positive two billion.
+
+92
+00:04:08,082 --> 00:04:09,090
+顺便说一下，也不是正好二十亿
+It's not exactly two billion.
+
+93
+00:04:09,090 --> 00:04:11,094
+大概是20几亿
+By the way it's like to point something billion.
+
+94
+00:04:11,094 --> 00:04:13,083
+这些限制从何而来
+Where are these limits coming from?
+
+95
+00:04:13,083 --> 00:04:15,030
+他们能说得通吗？
+Did they make any sense?
+
+96
+00:04:15,030 --> 00:04:16,047
+答案是肯定的
+And the answer is yes.
+
+97
+00:04:16,047 --> 00:04:17,016
+他们说得通
+They make sense.
+
+98
+00:04:17,016 --> 00:04:20,031
+它们与变量的大小直接相关
+They are directly tied with the size of the variable.
+
+99
+00:04:20,031 --> 00:04:22,038
+这就是在它们里允许存储的数据量
+That is how much data were allowed to store.
+
+100
+00:04:22,038 --> 00:04:23,013
+in it.
+
+101
+00:04:23,013 --> 00:04:24,078
+一个整数是4个字节
+An integer is four bytes.
+
+102
+00:04:24,078 --> 00:04:26,001
+在四个字节的数据
+With four bytes of data,
+
+103
+00:04:26,001 --> 00:04:27,096
+我们可以存一个在那个范围内的值
+we can still values in that range.
+
+104
+00:04:27,096 --> 00:04:29,022
+让我们把这个剖析一下
+Let's break this down a little bit.
+
+105
+00:04:29,022 --> 00:04:31,089
+一个字节是8比特（bit）的数据
+so one byte is eight bits of data,
+
+106
+00:04:31,089 --> 00:04:33,087
+也就是说，4个字节就是32 bits的数据
+which means that four bytes is thirty
+
+107
+00:04:33,087 --> 00:04:34,089
+Two bits of data,
+
+108
+00:04:34,089 --> 00:04:36,084
+因为这个变量是带符号的
+because this variable is signed,
+
+109
+00:04:36,084 --> 00:04:38,046
+也就是说它可以是负的
+meaning it can be negative,
+
+110
+00:04:38,046 --> 00:04:41,019
+它包含了一个符号，也就是一个负号
+it contains a sign like a negative sign,
+
+111
+00:04:41,019 --> 00:04:42,090
+因为这个变量是带符号的（signed）
+because this variable is signed.
+
+112
+00:04:42,090 --> 00:04:44,010
+32bits中的一个bit
+One of those bits,
+
+113
+00:04:44,010 --> 00:04:47,052
+必须是符号
+one of those thirty two bits has to be for the sign,
+
+114
+00:04:47,052 --> 00:04:49,062
+那样我们才知道它是正的还是负的
+so that we know of its positive or negative,
+
+115
+00:04:49,062 --> 00:04:52,053
+只剩下31个位留给实际的数字
+which only leaves thirty one bits left for the actual number.
+
+116
+00:04:52,053 --> 00:04:54,045
+现在，每个bit可以是0或1（译者按：byte和bit，1 byte 包含8 bits，大家别搞混咯）
+Now a bit can either be zero or one.
+
+117
+00:04:54,045 --> 00:04:57,015
+所以1 bit数据有两种可能的值
+so there are two possible values for one bit of data,
+
+118
+00:04:57,015 --> 00:04:59,001
+所以做一点算术的话
+so using a little bit of maths here,
+
+119
+00:04:59,001 --> 00:05:02,043
+我们可以说，我们有31个bits，每个bit有两个可能的值
+we can say that we have thirty one bits to play with two possible values per bit.
+
+120
+00:05:02,043 --> 00:05:04,080
+那么2的31次方是多少呢？
+So what is true to the power of thirty one?
+
+121
+00:05:04,080 --> 00:05:09,024
+如果我们在这里打开一个计算器，输入2的31次方
+If we crack open a calculator here and type in two to the power of thirty one,
+
+122
+00:05:09,024 --> 00:05:13,062
+我们会得到大概20亿这个值，这个值，这个21亿的值
+we will get about two billion that value than that to point one billion.
+
+123
+00:05:13,062 --> 00:05:17,025
+是我们可以在int里存储的最大数字 （画面中的文字：其实最大值应该比算出来的少1，因为我们还需要地方存0）
+That is the maximum number that we can store with an integer.
+
+124
+00:05:17,025 --> 00:05:17,067
+记住
+Now remember,
+
+125
+00:05:17,067 --> 00:05:21,060
+我们还有预留一个bit用于决定该数是否为负
+we also have one bit that is reserved for whether or not that number is negative.
+
+126
+00:05:21,060 --> 00:05:24,012
+正因为如此，我们从0开始算可以存储到最大21亿
+so because of that we can store up to that number from zero,
+
+127
+00:05:24,012 --> 00:05:29,034
+但是我们也可以从另一边开始算，也就是从0往下可以存到-21亿
+But also we can go the other way and store all the negative values down to negative to one one billion.
+
+128
+00:05:29,034 --> 00:05:31,002
+”但我不想要负值呀“
+But I don't want negative values.
+
+129
+00:05:31,002 --> 00:05:32,025
+我听到你这么说
+I hear you say,
+
+130
+00:05:32,025 --> 00:05:37,038
+有没有一种方法可以把那个用来存负号的bit去掉，也用来存我们的数呢?
+Is there a way to just get rid of that one bid being for the negative sign and just use it as part of my number.
+
+131
+00:05:37,038 --> 00:05:37,071
+额
+Well
+
+132
+00:05:37,071 --> 00:05:38,046
+是的
+yes,
+
+133
+00:05:38,046 --> 00:05:39,000
+是的
+yes,
+
+134
+00:05:39,000 --> 00:05:39,090
+有的！
+there is.
+
+135
+00:05:39,090 --> 00:05:42,015
+这就是我们所说的无符号数（unsigned）
+That is what we call an unsigned number.
+
+136
+00:05:42,015 --> 00:05:44,064
+这意味着它是一个没有符号的数字
+That means it's a number that does not have a sign,
+
+137
+00:05:44,064 --> 00:05:46,053
+意思是它总是正的
+meaning it's always positive in,
+
+138
+00:05:46,053 --> 00:05:47,047
+在C++中
+say,
+
+139
+00:05:47,047 --> 00:05:47,048
+Plus.
+
+140
+00:05:47,048 --> 00:05:47,049
+Plus,
+
+141
+00:05:47,049 --> 00:05:51,054
+我们可以通过在int前面输入unsigned来获得
+we can make one of those by just typing in unsigned in front of our integral.
+
+142
+00:05:51,054 --> 00:05:56,016
+现在我们所做的是，我们有32个bits，那2的32次方
+So now what we've done is we have thirty two bits to play with and two to the power of thirty two,
+
+143
+00:05:56,016 --> 00:05:56,067
+当然
+of course,
+
+144
+00:05:56,067 --> 00:06:01,002
+也就是这里的两倍，42.9亿
+is double what we have here full point to nine billion,
+
+145
+00:06:01,002 --> 00:06:04,082
+这基本就是unsigned这个关键字在C++中所做的
+and that's basically what the ONS signed key.
+
+146
+00:06:04,082 --> 00:06:04,083
+ 
+
+147
+00:06:04,083 --> 00:06:08,067
+它允许我们定义一个没有符号位的整数
+It lets us define an integer that does not have a sign bit.
+
+148
+00:06:08,067 --> 00:06:08,097
+好的
+OK.
+
+149
+00:06:08,097 --> 00:06:11,016
+那么我们还有哪些其他数据类型呢
+So what are the data types that we have available to us?
+
+150
+00:06:11,016 --> 00:06:12,054
+如果我不想要一个4字节的整数呢
+What if I don't want to fall by an integer?
+
+151
+00:06:12,054 --> 00:06:14,010
+还有其他类型的吗
+What other types are there?
+
+152
+00:06:14,010 --> 00:06:14,028
+所以
+So,
+
+153
+00:06:14,028 --> 00:06:15,072
+就整数值而言
+As far as integer values goes,
+
+154
+00:06:15,072 --> 00:06:17,022
+我们实际上有很多
+we actually have quite a few.
+
+155
+00:06:17,022 --> 00:06:18,021
+我们有char
+We've got Shaw,
+
+156
+00:06:18,021 --> 00:06:19,068
+这是一个byte的数据
+which is one byte of data.
+
+157
+00:06:19,068 --> 00:06:20,057
+我们有short
+We've got short,
+
+158
+00:06:20,057 --> 00:06:25,074
+这是两个字节的数据，我们有int，4个字节，我们有long
+which is two bytes of data we have int which is four bytes of data we have long,
+
+159
+00:06:25,074 --> 00:06:28,017
+也通常是4字节的数据
+which is also usually four bytes of data,
+
+160
+00:06:28,017 --> 00:06:29,076
+具体根据编译器可能有不同
+depending on the compiler,
+
+161
+00:06:29,076 --> 00:06:31,011
+然后我们有long long
+and then we have long long,
+
+162
+00:06:31,011 --> 00:06:33,054
+通常是8字节的数据
+which is usually eight bytes of data.
+
+163
+00:06:33,054 --> 00:06:35,001
+还有其他类型 比如long int
+There are also other types like long end.
+
+164
+00:06:35,001 --> 00:06:36,075
+这里有一些不同的变形
+There are a few different modifications here.
+
+165
+00:06:36,075 --> 00:06:38,043
+我不打算把所有都讲到
+I'm not going to go through all of them,
+
+166
+00:06:38,043 --> 00:06:41,028
+但最基本的是这五个
+but the basic ones are these five.
+
+167
+00:06:41,028 --> 00:06:43,077
+你也可以在它们前面添加unsigned
+You can also add ons signed to any of these,
+
+168
+00:06:43,077 --> 00:06:46,089
+它会移除那个符号位，让你设置一个更大的数字
+and it will remove that sign bit and let you set a larger number.
+
+169
+00:06:46,089 --> 00:06:47,022
+Char
+Char,
+
+170
+00:06:47,022 --> 00:06:49,086
+传统上是用来存储字符（character）的
+traditionally is also used for storing characters,
+
+171
+00:06:49,086 --> 00:06:50,082
+而不仅仅是数字
+not just numbers,
+
+172
+00:06:50,082 --> 00:06:53,022
+不仅可以给它赋值数字比如说50
+or apart from assigning numbers to it like fifty,
+
+173
+00:06:53,022 --> 00:06:55,080
+你也可以给它赋值一个字符，比如'A'
+you can also assign characters to it like a now.
+
+174
+00:06:55,080 --> 00:06:59,010
+这并不是说你不能给其他整数赋值一个字符，你可以的
+That's not to say you can't assign characters to other English as you can,
+
+175
+00:06:59,010 --> 00:07:00,018
+因为到头来
+because at the end of the day,
+
+176
+00:07:00,018 --> 00:07:01,074
+我输入的这个字符，这个A
+this character that I typed this letter,
+
+177
+00:07:01,074 --> 00:07:02,034
+a
+a.
+
+178
+00:07:02,034 --> 00:07:03,081
+它只是一个数字
+It's just a number.
+
+179
+00:07:03,081 --> 00:07:04,026
+事实上
+In fact,
+
+180
+00:07:04,026 --> 00:07:07,077
+这个数字————这个与该字符绑定的数字
+that number that numeric value associated with that character,
+
+181
+00:07:07,077 --> 00:07:10,008
+也就是字符A的数字是65
+The character A is sixty five.
+
+182
+00:07:10,008 --> 00:07:10,028
+现在
+Now.
+
+183
+00:07:10,028 --> 00:07:13,014
+如果数字只是字符，而字符只是数字
+if numbers are just characters and of characters are just numbers,
+
+184
+00:07:13,014 --> 00:07:16,017
+那么为什么我们会有这种区别呢
+then why exactly do we have this distinction?
+
+185
+00:07:16,017 --> 00:07:19,062
+为什么我说char是专门用于字符的，
+Why do I say that chair is specifically used for characters,
+
+186
+00:07:19,062 --> 00:07:20,079
+而实际上它并不是呢？
+whereas it's really not.
+
+187
+00:07:20,079 --> 00:07:22,041
+这是因为我们经常
+That is because we often,
+
+188
+00:07:22,041 --> 00:07:25,050
+作为程序员，对某些数据类型做出假设
+as programmers make assumptions about certain data types.
+
+189
+00:07:25,050 --> 00:07:28,086
+如果我传入一个char，并将其命名为character
+if I pass in a char and call it something like character,
+
+190
+00:07:28,086 --> 00:07:31,028
+我通常是希望你能真的给它赋值一个字符
+I usually expect you to actually sign a character to it.
+
+191
+00:07:31,028 --> 00:07:35,019
+一个很好的例子是，如果你试着打印一个字符
+So a good example of this is if you actually try and print out a char.
+
+192
+00:07:35,019 --> 00:07:36,099
+如果我打印这个变量
+If I print out this variable,
+
+193
+00:07:36,099 --> 00:07:37,023
+a
+A,
+
+194
+00:07:37,023 --> 00:07:38,007
+比如说
+for example,
+
+195
+00:07:38,007 --> 00:07:39,024
+我按F5
+and I hit a five,
+
+196
+00:07:39,024 --> 00:07:41,040
+我不会得到与之相联系的数字
+I'm not going to get the number associated with it.
+
+197
+00:07:41,040 --> 00:07:43,059
+这个字符A会打印出来
+I'm going to get the character a printed out.
+
+198
+00:07:43,059 --> 00:07:45,096
+如果我用它的实际数值来替换它
+so if I replace this with his actual numeric value,
+
+199
+00:07:45,096 --> 00:07:47,004
+像65
+like sixty five,
+
+200
+00:07:47,004 --> 00:07:49,032
+我还会得到一个打印出来的A
+I'm also going to get the value a print it out,
+
+201
+00:07:49,032 --> 00:07:54,056
+如你所见，因为cout，如果我把一个字符传递到cout里
+as you can see over here because see out if I pass in a char into C out,
+
+202
+00:07:54,056 --> 00:07:56,052
+它会把它当作一个字符
+it's going to treat it like a character,
+
+203
+00:07:56,052 --> 00:07:57,063
+而不是数字
+not like a number.
+
+204
+00:07:57,063 --> 00:07:59,088
+如果我把它改成另一种类型 比如说像short
+If I change it to be some other type like a short,
+
+205
+00:07:59,088 --> 00:08:00,093
+for example,
+
+206
+00:08:00,093 --> 00:08:02,001
+并按F5
+And here are five.
+
+207
+00:08:02,001 --> 00:08:04,086
+你可以看到cout不再把它当一个字符
+You can say that C out no longer treat it like a character.
+
+208
+00:08:04,086 --> 00:08:07,028
+而打印出了实际的数字
+it's going to actually print out the numeric value.
+
+209
+00:08:07,028 --> 00:08:09,009
+甚至我在这里给它赋值一个字符
+And even if I assign a character here,
+
+210
+00:08:09,009 --> 00:08:11,070
+其实就是把65赋值给它
+it's really assigning the value sixty five.
+
+211
+00:08:11,070 --> 00:08:13,002
+如果我再运行一次
+So if I run this again,
+
+212
+00:08:13,002 --> 00:08:14,097
+你可以看到，我们得到了65
+you can see that we get sixty five.
+
+213
+00:08:14,097 --> 00:08:18,087
+我告诉你们这些的原因是，我想让你们理解数据类型
+So the reason I'm telling you all this is because I want you to understand that data types.
+
+214
+00:08:18,087 --> 00:08:23,001
+数据类型的使用完全取决于程序员
+the usage of data types is just up to the programmer.
+
+215
+00:08:23,001 --> 00:08:23,085
+真的
+Really,
+
+216
+00:08:23,085 --> 00:08:26,028
+我们已经有了一些约定
+there are certain conventions that we have in place,
+
+217
+00:08:26,028 --> 00:08:29,067
+但是没有任何东西是固定的、你必须遵循的
+but there's nothing can create that you have to actually follow.
+
+218
+00:08:29,067 --> 00:08:31,023
+毕竟C++里的规则非常少
+There are very little rules in,
+
+219
+00:08:31,023 --> 00:08:31,035
+say,
+
+220
+00:08:31,035 --> 00:08:31,083
+Plus class,
+
+221
+00:08:31,083 --> 00:08:32,046
+after all,
+
+222
+00:08:32,046 --> 00:08:33,036
+正因为如此
+so because of that,
+
+223
+00:08:33,036 --> 00:08:42,051
+我希望您意识到，这些数据类型之间唯一的真正区别是，当您用该数据类型创建一个变量时，将分配多少内存
+
+224
+00:08:42,051 --> 00:08:44,019
+所以不考虑整数类型的话
+So with those integer types the side.
+
+225
+00:08:44,019 --> 00:08:46,059
+如果我想要存储一个小数呢？
+What if I want to store a decimal value,
+
+226
+00:08:46,059 --> 00:08:47,007
+例如
+For example,
+
+227
+00:08:47,007 --> 00:08:48,015
+5.5
+five point five.
+
+228
+00:08:48,015 --> 00:08:49,005
+我该怎么做呢
+How do I do that?
+
+229
+00:08:49,005 --> 00:08:49,020
+嗯
+Well,
+
+230
+00:08:49,020 --> 00:08:52,053
+我们有两种类型的数据类型可以用，float和double
+for that we have two data types we have flirt and we have double.
+
+231
+00:08:52,053 --> 00:08:55,044
+也有一些修饰符可以用，比如long double
+There are also some modifiers that you can do like long double.
+
+232
+00:08:55,044 --> 00:08:56,049
+我们不打算讲这些
+We're not going to get into those.
+
+233
+00:08:56,049 --> 00:09:02,082
+所以float基本上是一个小数，占用4个字节
+So a Florida is basically a decimal value that we can store that occupies four bytes of data.
+
+234
+00:09:02,082 --> 00:09:04,035
+我们来定义一个变量
+So let's define a variable here,
+
+235
+00:09:04,035 --> 00:09:05,057
+比如五点五
+such as five point five.
+
+236
+00:09:05,057 --> 00:09:06,048
+我们怎么做呢
+How do we do that?
+
+237
+00:09:06,048 --> 00:09:07,089
+我们也来把这个a换成这个变量
+Let's also replace this variable,
+
+238
+00:09:07,089 --> 00:09:11,004
+从而把我们的float变量打印出来，编译我们的文件
+a way of printing out outflow of variable and compile a file.
+
+239
+00:09:11,004 --> 00:09:12,069
+让我们F5来运行我们的程序
+Let's hit at five to run our program,
+
+240
+00:09:12,069 --> 00:09:13,092
+你可以看到我们得到了5.5
+and you can see we get five point,
+
+241
+00:09:13,092 --> 00:09:15,045
+非常好
+five percent of that fantastic.
+
+242
+00:09:15,045 --> 00:09:18,051
+现在你可能认为你已经定义了一个浮点数（float）
+Now you may think that you've defined a float here,
+
+243
+00:09:18,051 --> 00:09:19,080
+但实际上你没有
+but you actually haven't.
+
+244
+00:09:19,080 --> 00:09:22,017
+你定义的其实是一个双精度（double）
+You've actually defined a double.
+
+245
+00:09:22,017 --> 00:09:24,093
+如果我们回到vs，并将鼠标悬停在这个值上
+if we go back to visual studio and we have about our mouse over this value,
+
+246
+00:09:24,093 --> 00:09:25,086
+你可以在括号里看到
+you can see that in brackets,
+
+247
+00:09:25,086 --> 00:09:26,067
+它是double的
+it says double.
+
+248
+00:09:26,067 --> 00:09:27,072
+正如我刚才提到的
+As I just mentioned,
+
+249
+00:09:27,072 --> 00:09:31,074
+我们有两个不同的变量可以用来存放小数
+we have two different variables that we can use to stall decimal numbers,
+
+250
+00:09:31,074 --> 00:09:33,045
+float和double
+flirt and double.
+
+251
+00:09:33,045 --> 00:09:36,081
+那么我们如何区分double和float呢
+So how do we discern between what a double is and what a Florida is?
+
+252
+00:09:36,081 --> 00:09:37,035
+我们的方法是
+The way we do,
+
+253
+00:09:37,035 --> 00:09:41,034
+基本上就是在float变量后附上一个f
+that is by basically appending in half to al floored variables.
+
+254
+00:09:41,034 --> 00:09:43,011
+它可以是小写的或大写的
+It can be lowercase or uppercase.
+
+255
+00:09:43,011 --> 00:09:43,098
+无所谓
+It doesn't matter,
+
+256
+00:09:43,098 --> 00:09:44,070
+但关键是
+but the point is,
+
+257
+00:09:44,070 --> 00:09:45,090
+如果我们有一个F
+If we have an F,
+
+258
+00:09:45,090 --> 00:09:48,039
+你可以说我们实际上已经声明了一个float
+you can say that we've actually declared a flirt,
+
+259
+00:09:48,039 --> 00:09:50,034
+float基本上是四个字节大小
+so flows are basically four bytes,
+
+260
+00:09:50,034 --> 00:09:53,046
+而double是8个字节大小
+lodge and doubles are eight buys lodge.
+
+261
+00:09:53,046 --> 00:09:53,091
+最后
+Finally,
+
+262
+00:09:53,091 --> 00:09:56,067
+我们还有一个原始的数据类型可以用
+we have one more primitive data type to play with,
+
+263
+00:09:56,067 --> 00:09:58,011
+也就是bool（布尔型）
+and that is a bull.
+
+264
+00:09:58,011 --> 00:09:59,061
+bool代表boolean
+Now Bull stands for Berlin,
+
+265
+00:09:59,061 --> 00:10:02,076
+它要么是真(true)，要么是假(false)
+and it can either be true or false.
+
+266
+00:10:02,076 --> 00:10:05,082
+如果我们试着打印到控制台，按F5
+If we try and printed to our console and here are five,
+
+267
+00:10:05,082 --> 00:10:09,042
+你可以看到，我们其实得到了一个数值———1，因为当然了
+you can see that we'll actually get a numeric value one because of course,
+
+268
+00:10:09,042 --> 00:10:12,015
+没有真或假这种东西
+there's no such thing as true or false.
+
+269
+00:10:12,015 --> 00:10:15,006
+那只是英语单词而已，计算机只处理数字
+Does that English Was computers deal with numbers?
+
+270
+00:10:15,006 --> 00:10:19,011
+所以基本上零意味着0代表false，0以外的任何东西
+So basically zero means false and anything except zero,
+
+271
+00:10:19,011 --> 00:10:21,093
+任何其他数字，都是true
+or any other number means true.
+
+272
+00:10:21,093 --> 00:10:22,053
+在我们这种情况下
+In this case,
+
+273
+00:10:22,053 --> 00:10:24,045
+我们有一个1被打印到控制台
+we'll actually get one printing to the console,
+
+274
+00:10:24,045 --> 00:10:26,013
+表明它是true
+indicating that it is true.
+
+275
+00:10:26,013 --> 00:10:29,007
+如果我们把这个改成false并运行我们的程序
+If we change this to false and run our program,
+
+276
+00:10:29,007 --> 00:10:30,021
+我们会得到0
+we will get zero,
+
+277
+00:10:30,021 --> 00:10:31,005
+意思是false
+which means false.
+
+278
+00:10:31,005 --> 00:10:34,014
+bool数据类型占一个字节的内存
+The bull data type occupies one byte of memory.
+
+279
+00:10:34,014 --> 00:10:35,013
+现在你可能会想
+Now you might be wondering,
+
+280
+00:10:35,013 --> 00:10:39,030
+“1个字节？为啥呀？一个bool只能是true或者false，
+one buys why a bull can either be true or false.
+
+281
+00:10:39,030 --> 00:10:43,014
+显然只需要1个bit来表示啊！” 你是对的！！
+Surely that only takes one bit to represent and you are correct?
+
+282
+00:10:43,014 --> 00:10:45,009
+它确实只需要1个bit来表示
+It does take one bit to represent.
+
+283
+00:10:45,009 --> 00:10:45,066
+然而
+However,
+
+284
+00:10:45,066 --> 00:10:47,046
+当我们在处理内存寻址时
+when we're dealing with addressing memory,
+
+285
+00:10:47,046 --> 00:10:47,070
+也就是说
+that is,
+
+286
+00:10:47,070 --> 00:10:51,051
+当我们需要从内存中获取或者存储我们的bool时
+We need to retrieve album from memory or stored in memory.
+
+287
+00:10:51,051 --> 00:10:54,072
+我们没有办法寻址到每个bit
+There is no way for us to actually address individual bits.
+
+288
+00:10:54,072 --> 00:10:56,061
+我们只能寻址到bytes
+we can only address bites,
+
+289
+00:10:56,061 --> 00:10:58,080
+正因为如此，我们无法创建一个大小只有1bit的变量类型
+so because of that we can't actually create a variable type.
+
+290
+00:10:58,080 --> 00:11:03,069
+因为我们需要能够访问它，而我们不能
+That is one bit because we'd need to be able to access it and we can't.
+
+291
+00:11:03,069 --> 00:11:05,055
+我们现在只能访问bytes
+We can only access bias now.
+
+292
+00:11:05,055 --> 00:11:05,097
+当然
+of course,
+
+293
+00:11:05,097 --> 00:11:07,023
+然而，
+one thing you could do,
+
+294
+00:11:07,023 --> 00:11:07,083
+你可以做的是，
+on the other hand,
+
+295
+00:11:07,083 --> 00:11:13,023
+巧妙的将8个bools存在1个byte里面
+has be really smart about how you store data and store eight bulls in one bite.
+
+296
+00:11:13,023 --> 00:11:14,067
+这完全没问题
+That's totally okay,
+
+297
+00:11:14,067 --> 00:11:15,090
+每个bool占一个bit
+one bit per bold,
+
+298
+00:11:15,090 --> 00:11:22,092
+但是你仍然只需那一个byte的内存，我们可能会在未来谈论一些高级的、有趣的技巧
+but you still have that one bite of allocated memory will probably talk about advanced fun tricks like that in the future.
+
+299
+00:11:22,092 --> 00:11:25,077
+但就目前而言，bool占一个字节
+But for now a bull is one byte of memory.
+
+300
+00:11:25,077 --> 00:11:29,010
+所以所有这些关于大小、bytes
+So with all this talk of sizes and bites,
+
+301
+00:11:29,010 --> 00:11:31,035
+、以及所有东西占多少内存的讨论
+and how much everything takes,
+
+302
+00:11:31,035 --> 00:11:32,013
+那如何
+How,
+
+303
+00:11:32,013 --> 00:11:35,031
+我们到底如何知道数据类型有多大呢？
+How do we actually know how big a data type is,
+
+304
+00:11:35,031 --> 00:11:36,060
+毕竟这取决于于编译器
+It is dependent on the compiler.
+
+305
+00:11:36,060 --> 00:11:37,002
+After all,
+
+306
+00:11:37,002 --> 00:11:38,022
+那我们有办法可以检查一下吗
+is there some way we can check?
+
+307
+00:11:38,022 --> 00:11:38,091
+是的
+Yes,
+
+308
+00:11:38,091 --> 00:11:39,027
+是的
+yes,
+
+309
+00:11:39,027 --> 00:11:40,028
+有的
+there is.
+
+310
+00:11:40,028 --> 00:11:43,095
+这C++里我们可以用一个叫sizeof的操作符
+There's an operator we have available to us and see if his boss called size of so.
+
+311
+00:11:43,095 --> 00:11:45,000
+如果我们来到这里
+if we come over here,
+
+312
+00:11:45,000 --> 00:11:47,010
+比如说我们打印sizeof(bool)
+And we print size of bull,
+
+313
+00:11:47,010 --> 00:11:48,003
+for example,
+
+314
+00:11:48,003 --> 00:11:53,022
+我们基本上只需要输入sizeof，然后在括号里或者不要括号，没关系的
+we basically just type in the word size off and then either in brackets or not doesn't really matter,
+
+315
+00:11:53,022 --> 00:11:56,031
+不过我更喜欢用括号，或者我该说圆括号
+although I do prefer to use brackets or parentheses,
+
+316
+00:11:56,031 --> 00:11:58,032
+然后我们输入我们的数据类型
+I should say we type in our data type.
+
+317
+00:11:58,032 --> 00:12:01,065
+按F5，你可以看到我们的bool是1 byte
+Here are five because he tells us that a bull is one point.
+
+318
+00:12:01,065 --> 00:12:04,035
+如果我用int替换它 按F5
+If I replaced this with ink and here are five,
+
+319
+00:12:04,035 --> 00:12:05,046
+我们得到4
+we have four,
+
+320
+00:12:05,046 --> 00:12:07,098
+如果我填double 按F5
+and if I do something like double and hit a five,
+
+321
+00:12:07,098 --> 00:12:11,031
+我们得到8，挺酷的
+we have AIDS or some pretty cool stuff,
+
+322
+00:12:11,031 --> 00:12:14,001
+这基本上就是变量的全部
+so that's basically all there is to variables,
+
+323
+00:12:14,001 --> 00:12:15,096
+或者至少是我讲过的原始类型
+or at least the primitive types that I've covered.
+
+324
+00:12:15,096 --> 00:12:19,050
+你其实可以在c++中创造出很多不同的类型
+There are many different types that you can actually create in staples Glass,
+
+325
+00:12:19,050 --> 00:12:21,027
+以及很多已经为你创造了的
+and that have already been created for you.
+
+326
+00:12:21,027 --> 00:12:21,060
+然而
+However,
+
+327
+00:12:21,060 --> 00:12:25,026
+它们都是基于这些基本类型的定制类型
+they're all custom types that are all based on these primitive types.
+
+328
+00:12:25,026 --> 00:12:31,059
+这些是我们用来定义和存储我们可能创建的任何类型的数据的基础
+These are the building blocks that we use to define and store any kind of data we could possibly create.
+
+329
+00:12:31,059 --> 00:12:31,080
+现在
+Now,
+
+330
+00:12:31,080 --> 00:12:33,054
+有了这些原始数据类型
+with any of these primitive data types,
+
+331
+00:12:33,054 --> 00:12:37,028
+我们也可以将它们转换为指针（pointer）或引用（reference）
+we also have the ability to turn them into pointers or references.
+
+332
+00:12:37,028 --> 00:12:45,039
+指针可以通过在你的类型旁边写一个星号来声明，而引用是你的类型旁边加上一个&符号
+Pointers can be declared by writing an asterisk next to your type like this and references by an ampersand next to your type.
+
+333
+00:12:45,039 --> 00:12:52,080
+指针和引用是一个很大很复杂也很重要的话题，我真的想把它们保存在单独的视频中
+pointers and references are such a huge and complicated and vital topics that I really want to save them for separate videos,
+
+334
+00:12:52,080 --> 00:12:54,039
+这样你们就能理解并正确地理解
+so that you guys understand and properly.
+
+335
+00:12:54,039 --> 00:12:55,050
+所以现在在这个视频中
+so for now for this video,
+
+336
+00:12:55,050 --> 00:12:57,018
+我们只会讨论这些原始类型
+we're just going to stick with these primitive types.
+
+337
+00:12:57,018 --> 00:12:58,089
+确保你理解它们
+Make sure you want to stand them.
+
+338
+00:12:58,089 --> 00:13:02,057
+它们将成为你所写的任何东西的基础
+they're going to be the basis for pretty much every thing you ever right,
+
+339
+00:13:02,057 --> 00:13:03,081
+所以它们真的很重要
+so they're really important,
+
+340
+00:13:03,081 --> 00:13:04,041
+但无论如何
+but anyway,
+
+341
+00:13:04,041 --> 00:13:05,082
+我希望你们喜欢这个视频 （译者按：后面不翻译啦，就看自动翻译的吧！）
+I hope you guys enjoy this video.
+
+342
+00:13:05,082 --> 00:13:06,033
+如果你这样做了
+If you did,
+
+343
+00:13:06,033 --> 00:13:07,086
+请按这个按钮
+please hit that like button,
+
+344
+00:13:07,086 --> 00:13:10,056
+你也可以在Twitter和Instagram上关注我
+you can also follow me on Twitter and Instagram.
+
+345
+00:13:10,056 --> 00:13:15,024
+如果你真的喜欢这个视频你想成为未来视频制作的一部分
+And if you really like this video and you want to be a part of how future videos get made,
+
+346
+00:13:15,024 --> 00:13:17,091
+你想为这些视频的计划做贡献
+you want to contribute to the planning of these videos,
+
+347
+00:13:17,091 --> 00:13:20,043
+以及早期的草稿和视频
+as well as received early drafts and videos.
+
+348
+00:13:20,043 --> 00:13:21,072
+当我制作它们的时候
+as I'm making them,
+
+349
+00:13:21,072 --> 00:13:26,013
+然后请支持我的爱国链接将会在你支持的这个视频的描述中
+then please support me on patriotic link will be in the description of this video you'll support.
+
+350
+00:13:26,013 --> 00:13:29,019
+有什么能让这些视频成为可能 感谢观看了这些视频
+There is what makes these videos possible thanks to watching guys.
+
+351
+00:13:29,019 --> 00:13:30,015
+我下次再见
+I'll see you next time.
+
+352
+00:13:30,015 --> 00:13:30,078
+再见
+Good bye.
+
+353
+00:13:34,068 --> 00:13:34,074
+是的
+Yeah.
+

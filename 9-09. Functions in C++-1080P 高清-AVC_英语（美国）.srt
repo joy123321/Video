@@ -1,0 +1,1220 @@
+1
+00:00:00,000 --> 00:00:01,047
+hey little guys my name is Luciano
+
+2
+00:00:01,047 --> 00:00:03,081
+welcome to another video today what are
+
+3
+00:00:03,081 --> 00:00:05,094
+we talking about functions and C++ what
+
+4
+00:00:05,094 --> 00:00:08,088
+a midweek video am i dreaming has Jono
+
+5
+00:00:08,088 --> 00:00:11,028
+gone crazy maybe but that's not the
+
+6
+00:00:11,028 --> 00:00:12,093
+point I just want to say a huge thank
+
+7
+00:00:12,093 --> 00:00:14,013
+you for everyone who's been drawing this
+
+8
+00:00:14,013 --> 00:00:15,036
+series I'm really glad you guys are
+
+9
+00:00:15,036 --> 00:00:17,001
+enjoying this because it's been a real
+
+10
+00:00:17,001 --> 00:00:18,084
+blast to me if you want to show me how
+
+11
+00:00:18,084 --> 00:00:20,046
+much you appreciate my videos you can
+
+12
+00:00:20,046 --> 00:00:22,011
+follow me on Instagram link in the
+
+13
+00:00:22,011 --> 00:00:23,043
+description below lately I've been
+
+14
+00:00:23,043 --> 00:00:24,072
+really into photography and it would
+
+15
+00:00:24,072 --> 00:00:25,098
+mean the world to me if you guys could
+
+16
+00:00:25,098 --> 00:00:26,057
+follow me
+
+17
+00:00:26,057 --> 00:00:28,041
+just like pause this video right now and
+
+18
+00:00:28,041 --> 00:00:30,087
+just go and follow me anyway back to
+
+19
+00:00:30,087 --> 00:00:33,039
+functions so what exactly are functions
+
+20
+00:00:33,039 --> 00:00:35,010
+functions are basically blocks of code
+
+21
+00:00:35,010 --> 00:00:36,051
+that we write that are designed to
+
+22
+00:00:36,051 --> 00:00:39,003
+perform a specific task later when we
+
+23
+00:00:39,003 --> 00:00:41,010
+get to classes those blocks are called
+
+24
+00:00:41,010 --> 00:00:43,038
+methods but when I say functions I'm
+
+25
+00:00:43,038 --> 00:00:45,006
+explicitly talking about something that
+
+26
+00:00:45,006 --> 00:00:47,016
+isn't part of a class it's pretty common
+
+27
+00:00:47,016 --> 00:00:48,087
+for us to split up functions to prevent
+
+28
+00:00:48,087 --> 00:00:50,064
+code duplication we don't want to be
+
+29
+00:00:50,064 --> 00:00:52,026
+running the same code multiple times
+
+30
+00:00:52,026 --> 00:00:54,051
+because of course if we did apart from
+
+31
+00:00:54,051 --> 00:00:56,004
+copying and pasting a lot of code and
+
+32
+00:00:56,004 --> 00:00:59,057
+just ending up with this huge mess it
+
+33
+00:00:59,057 --> 00:01:01,047
+also means that if we decide to change
+
+34
+00:01:01,047 --> 00:01:03,036
+some code we have to change it in all
+
+35
+00:01:03,036 --> 00:01:05,016
+those places where we pasted the
+
+36
+00:01:05,016 --> 00:01:06,048
+original code and that's just going to
+
+37
+00:01:06,048 --> 00:01:08,049
+be a disaster to maintain so what we can
+
+38
+00:01:08,049 --> 00:01:10,023
+do instead is just write a nice little
+
+39
+00:01:10,023 --> 00:01:11,097
+function that does what we want it to
+
+40
+00:01:11,097 --> 00:01:13,065
+and then we can call it multiple times
+
+41
+00:01:13,065 --> 00:01:15,063
+in our code if we need to you can think
+
+42
+00:01:15,063 --> 00:01:17,052
+of functions of having an input and an
+
+43
+00:01:17,052 --> 00:01:19,005
+output although they don't necessarily
+
+44
+00:01:19,005 --> 00:01:21,021
+need to we can provide the function with
+
+45
+00:01:21,021 --> 00:01:23,040
+certain parameters and the function can
+
+46
+00:01:23,040 --> 00:01:25,044
+return a value for us so suppose that we
+
+47
+00:01:25,044 --> 00:01:27,033
+wanted to multiply two numbers together
+
+48
+00:01:27,033 --> 00:01:29,007
+and we wanted to write a function that
+
+49
+00:01:29,007 --> 00:01:30,063
+did that so the first thing I'm going to
+
+50
+00:01:30,063 --> 00:01:32,013
+write here is something called a return
+
+51
+00:01:32,013 --> 00:01:34,026
+value that is this is the type that this
+
+52
+00:01:34,026 --> 00:01:36,000
+function will return since we're
+
+53
+00:01:36,000 --> 00:01:37,062
+multiplying two integers that of course
+
+54
+00:01:37,062 --> 00:01:39,056
+will result in an integer so our return
+
+55
+00:01:39,056 --> 00:01:41,016
+type is going to be int I'm going to
+
+56
+00:01:41,016 --> 00:01:42,051
+give the function a name in this case
+
+57
+00:01:42,051 --> 00:01:45,003
+multiplier and it's going to take two
+
+58
+00:01:45,003 --> 00:01:46,074
+parameters these are actually the
+
+59
+00:01:46,074 --> 00:01:47,073
+numbers that we want to multiply
+
+60
+00:01:47,073 --> 00:01:49,062
+together I'll just call them a and B
+
+61
+00:01:49,062 --> 00:01:51,078
+I'll give the function a body and all
+
+62
+00:01:51,078 --> 00:01:54,069
+this is going to do is return a times B
+
+63
+00:01:54,069 --> 00:01:56,001
+so you can see that we've got a function
+
+64
+00:01:56,001 --> 00:01:57,090
+here that takes in two parameters both
+
+65
+00:01:57,090 --> 00:02:00,036
+integers and simply returns the product
+
+66
+00:02:00,036 --> 00:02:01,083
+of those two numbers we don't
+
+67
+00:02:01,083 --> 00:02:03,069
+necessarily have to provide parameters
+
+68
+00:02:03,069 --> 00:02:05,057
+for example I could just not provide any
+
+69
+00:02:05,057 --> 00:02:07,041
+parameters and return something like
+
+70
+00:02:07,041 --> 00:02:09,021
+five times eight this is still a
+
+71
+00:02:09,021 --> 00:02:10,065
+function that returns
+
+72
+00:02:10,065 --> 00:02:13,008
+integer but it is just not taking any
+
+73
+00:02:13,008 --> 00:02:14,076
+parameters we could also tell the
+
+74
+00:02:14,076 --> 00:02:16,023
+function that we don't want it to return
+
+75
+00:02:16,023 --> 00:02:18,012
+anything and we do that by writing void
+
+76
+00:02:18,012 --> 00:02:20,013
+as its return type void of course means
+
+77
+00:02:20,013 --> 00:02:21,051
+nothing so instead this could do
+
+78
+00:02:21,051 --> 00:02:23,007
+something like love the result to the
+
+79
+00:02:23,007 --> 00:02:27,063
+console so let's go back to our original
+
+80
+00:02:27,063 --> 00:02:30,036
+example here where we had n a and int B
+
+81
+00:02:30,036 --> 00:02:32,097
+and we returned the product of those two
+
+82
+00:02:32,097 --> 00:02:34,098
+integers so how do we call this function
+
+83
+00:02:34,098 --> 00:02:37,026
+well calling a function is pretty simple
+
+84
+00:02:37,026 --> 00:02:39,024
+let's go ahead and try and print the
+
+85
+00:02:39,024 --> 00:02:41,004
+result of a multiplication I'm going to
+
+86
+00:02:41,004 --> 00:02:42,081
+first of all make a variable which holds
+
+87
+00:02:42,081 --> 00:02:44,052
+this result so I'll type end result
+
+88
+00:02:44,052 --> 00:02:47,043
+equals multiply and we'll go with 3 and
+
+89
+00:02:47,043 --> 00:02:49,095
+2 so what this is going to do is call
+
+90
+00:02:49,095 --> 00:02:51,075
+this multiply function with these two
+
+91
+00:02:51,075 --> 00:02:53,076
+parameters and then store the return
+
+92
+00:02:53,076 --> 00:02:56,031
+value that is this result of a times B
+
+93
+00:02:56,031 --> 00:02:58,095
+in this result integer we can then
+
+94
+00:02:58,095 --> 00:03:01,011
+output that result to the console
+
+95
+00:03:01,011 --> 00:03:03,033
+let's hit f5 to run our program and our
+
+96
+00:03:03,033 --> 00:03:04,083
+fruit builds you can see that we get 6
+
+97
+00:03:04,083 --> 00:03:06,045
+which of course is what three times two
+
+98
+00:03:06,045 --> 00:03:08,082
+is so let's kick this up a notch suppose
+
+99
+00:03:08,082 --> 00:03:09,090
+that I want to do a bunch of
+
+100
+00:03:09,090 --> 00:03:12,021
+multiplications and I want to log all of
+
+101
+00:03:12,021 --> 00:03:13,071
+them to the console if I do something
+
+102
+00:03:13,071 --> 00:03:15,048
+like that without a function then it
+
+103
+00:03:15,048 --> 00:03:17,016
+would look pretty messy so for example I
+
+104
+00:03:17,016 --> 00:03:18,096
+need to repeat this code so let's go
+
+105
+00:03:18,096 --> 00:03:21,033
+ahead and copy and paste a few time I'll
+
+106
+00:03:21,033 --> 00:03:23,010
+call it something like result two result
+
+107
+00:03:23,010 --> 00:03:27,056
+three will do eight times five 90 times
+
+108
+00:03:27,056 --> 00:03:31,053
+45 and if I run my program and oh hang
+
+109
+00:03:31,053 --> 00:03:32,061
+on a minute why am I getting the same
+
+110
+00:03:32,061 --> 00:03:34,041
+value everywhere oh look when I copied
+
+111
+00:03:34,041 --> 00:03:36,012
+and pasted this code I forgot to change
+
+112
+00:03:36,012 --> 00:03:37,074
+the variable now you may have thought
+
+113
+00:03:37,074 --> 00:03:39,018
+that I did that by accident but I
+
+114
+00:03:39,018 --> 00:03:40,050
+actually did it on purpose to prove
+
+115
+00:03:40,050 --> 00:03:43,074
+something this actually happens all the
+
+116
+00:03:43,074 --> 00:03:45,090
+time people copy and paste blocks of
+
+117
+00:03:45,090 --> 00:03:48,042
+code and then forget change one minor
+
+118
+00:03:48,042 --> 00:03:50,076
+detail and in certain situations you
+
+119
+00:03:50,076 --> 00:03:52,028
+might actually just run your program and
+
+120
+00:03:52,028 --> 00:03:53,055
+not even notice that it's not working
+
+121
+00:03:53,055 --> 00:03:56,079
+correctly until it breaks somewhere down
+
+122
+00:03:56,079 --> 00:03:58,059
+the line and yet something like this can
+
+123
+00:03:58,059 --> 00:04:00,003
+actually be fixed really easily if you
+
+124
+00:04:00,003 --> 00:04:01,047
+just create a function for it let's go
+
+125
+00:04:01,047 --> 00:04:03,000
+ahead and fix this by actually printing
+
+126
+00:04:03,000 --> 00:04:04,089
+out results two and three if I run this
+
+127
+00:04:04,089 --> 00:04:06,063
+we will get our correct results which is
+
+128
+00:04:06,063 --> 00:04:08,001
+great however you can see that I'm
+
+129
+00:04:08,001 --> 00:04:10,005
+actually calling this multiple times and
+
+130
+00:04:10,005 --> 00:04:12,015
+it's just a little bit annoying like for
+
+131
+00:04:12,015 --> 00:04:14,001
+example further down the road if I
+
+132
+00:04:14,001 --> 00:04:15,096
+decide to replace this multiply function
+
+133
+00:04:15,096 --> 00:04:17,091
+by simply from doing something like
+
+134
+00:04:17,091 --> 00:04:20,010
+eight times five look at this I have to
+
+135
+00:04:20,010 --> 00:04:22,038
+replace it in every single place three
+
+136
+00:04:22,038 --> 00:04:23,043
+times two
+
+137
+00:04:23,043 --> 00:04:26,007
+90 times 45 that's I want to have to
+
+138
+00:04:26,007 --> 00:04:27,042
+deal with that so this multiplication
+
+139
+00:04:27,042 --> 00:04:29,082
+and then logging the result let's go
+
+140
+00:04:29,082 --> 00:04:31,002
+ahead and make the function for that
+
+141
+00:04:31,002 --> 00:04:32,070
+it'll be void because it's not really
+
+142
+00:04:32,070 --> 00:04:34,035
+going to return anything to us it's just
+
+143
+00:04:34,035 --> 00:04:36,039
+going to perform what we asked it to do
+
+144
+00:04:36,039 --> 00:04:37,092
+we'll call it something like multiply
+
+145
+00:04:37,092 --> 00:04:40,002
+and log and then let's take a look at
+
+146
+00:04:40,002 --> 00:04:41,088
+which parameters we might want so what
+
+147
+00:04:41,088 --> 00:04:44,001
+actually changes between these three
+
+148
+00:04:44,001 --> 00:04:45,069
+blocks of code the values that we
+
+149
+00:04:45,069 --> 00:04:47,034
+actually multiplied that's it
+
+150
+00:04:47,034 --> 00:04:49,065
+so those become the parameters for our
+
+151
+00:04:49,065 --> 00:04:52,020
+function what actually changes between
+
+152
+00:04:52,020 --> 00:04:53,067
+these doctor probe what needs to be
+
+153
+00:04:53,067 --> 00:04:55,017
+specified for this function to perform
+
+154
+00:04:55,017 --> 00:04:57,018
+its job let's go ahead and write in our
+
+155
+00:04:57,018 --> 00:04:58,050
+parameters so we're going to be taking
+
+156
+00:04:58,050 --> 00:05:00,039
+in two integers and be using a really
+
+157
+00:05:00,039 --> 00:05:01,077
+cool them anything you want that MV
+
+158
+00:05:01,077 --> 00:05:03,033
+seems sensible we'll copy and paste one
+
+159
+00:05:03,033 --> 00:05:05,007
+of these blocks into this function this
+
+160
+00:05:05,007 --> 00:05:06,036
+looks pretty good of course I'll replace
+
+161
+00:05:06,036 --> 00:05:08,025
+three and two with our parameters so
+
+162
+00:05:08,025 --> 00:05:09,036
+that we're using the parameters we
+
+163
+00:05:09,036 --> 00:05:11,025
+specify into this function to perform
+
+164
+00:05:11,025 --> 00:05:13,002
+the multiplication against which will
+
+165
+00:05:13,002 --> 00:05:14,073
+cause a times B to get multiplied here
+
+166
+00:05:14,073 --> 00:05:16,008
+and then we're going to be logging our
+
+167
+00:05:16,008 --> 00:05:18,009
+results the consult so now instead of
+
+168
+00:05:18,009 --> 00:05:20,097
+doing this so many times all I have to
+
+169
+00:05:20,097 --> 00:05:24,087
+do is simply call multiply and log with
+
+170
+00:05:24,087 --> 00:05:26,049
+my parameters so three and two for
+
+171
+00:05:26,049 --> 00:05:29,010
+example and then we have eight and five
+
+172
+00:05:29,010 --> 00:05:36,030
+and then we have 90 and 45 and that's it
+
+173
+00:05:36,030 --> 00:05:37,086
+look at that I can get rid of all this
+
+174
+00:05:37,086 --> 00:05:39,063
+code and this is what we end up with a
+
+175
+00:05:39,063 --> 00:05:42,024
+nice clean and easy to read program if I
+
+176
+00:05:42,024 --> 00:05:44,057
+launch my program you can see that we
+
+177
+00:05:44,057 --> 00:05:47,001
+get the correct values here so this is a
+
+178
+00:05:47,001 --> 00:05:48,066
+pretty simple example but I think it's
+
+179
+00:05:48,066 --> 00:05:49,080
+effective in demonstrating that
+
+180
+00:05:49,080 --> 00:05:51,018
+functions are really really important
+
+181
+00:05:51,018 --> 00:05:52,074
+you should be aiming to split up your
+
+182
+00:05:52,074 --> 00:05:54,090
+code into many many functions however
+
+183
+00:05:54,090 --> 00:05:56,043
+one thing that I want to stress is don't
+
+184
+00:05:56,043 --> 00:05:58,023
+go overboard you don't need a function
+
+185
+00:05:58,023 --> 00:06:00,045
+for absolutely every line of code that's
+
+186
+00:06:00,045 --> 00:06:02,085
+not going to be good for anyone it's
+
+187
+00:06:02,085 --> 00:06:04,050
+going to be hard to maintain your code
+
+188
+00:06:04,050 --> 00:06:06,003
+is going to look messy and cluttered and
+
+189
+00:06:06,003 --> 00:06:07,028
+it's actually going to make your program
+
+190
+00:06:07,028 --> 00:06:09,054
+slower every time we call a function
+
+191
+00:06:09,054 --> 00:06:11,079
+asterisk the compiler generates a call
+
+192
+00:06:11,079 --> 00:06:13,080
+instruction what it basically means is
+
+193
+00:06:13,080 --> 00:06:16,044
+that in a running program in order for
+
+194
+00:06:16,044 --> 00:06:18,051
+us to call a function we need to create
+
+195
+00:06:18,051 --> 00:06:20,049
+the entire stack frame for the function
+
+196
+00:06:20,049 --> 00:06:21,093
+meaning we have to push things like the
+
+197
+00:06:21,093 --> 00:06:23,046
+parameters onto the stack we have to
+
+198
+00:06:23,046 --> 00:06:24,072
+also push something called a return
+
+199
+00:06:24,072 --> 00:06:26,049
+address onto the stack and then what we
+
+200
+00:06:26,049 --> 00:06:27,099
+do is we actually jump to a different
+
+201
+00:06:27,099 --> 00:06:30,054
+part of our binary in order to start
+
+202
+00:06:30,054 --> 00:06:32,028
+executing the instructions from our
+
+203
+00:06:32,028 --> 00:06:34,008
+function and that return value that we
+
+204
+00:06:34,008 --> 00:06:35,064
+push we need to get back to where we
+
+205
+00:06:35,064 --> 00:06:37,011
+originally were before we call the
+
+206
+00:06:37,011 --> 00:06:38,073
+function so this is called like jumping
+
+207
+00:06:38,073 --> 00:06:40,032
+around memory in order to execute
+
+208
+00:06:40,032 --> 00:06:41,070
+function instructions and all of that
+
+209
+00:06:41,070 --> 00:06:44,004
+takes time so it slows down our program
+
+210
+00:06:44,004 --> 00:06:45,081
+now the reason I said asterisk earlier
+
+211
+00:06:45,081 --> 00:06:47,037
+was because this is all assuming that
+
+212
+00:06:47,037 --> 00:06:48,063
+the compiler decides to keep our
+
+213
+00:06:48,063 --> 00:06:50,022
+function as an actual function and
+
+214
+00:06:50,022 --> 00:06:51,093
+doesn't inline it we're going to talk in
+
+215
+00:06:51,093 --> 00:06:53,061
+depth about inlining in a future video
+
+216
+00:06:53,061 --> 00:06:55,008
+so the reason I'm saying all this is
+
+217
+00:06:55,008 --> 00:06:56,064
+because you don't want to just go ahead
+
+218
+00:06:56,064 --> 00:06:58,032
+and create a functions absolutely every
+
+219
+00:06:58,032 --> 00:07:00,000
+line of code don't be ridiculous about
+
+220
+00:07:00,000 --> 00:07:01,026
+it it takes a little bit of experience
+
+221
+00:07:01,026 --> 00:07:03,012
+to realize what you need a function for
+
+222
+00:07:03,012 --> 00:07:04,086
+but basically if you see yourself doing
+
+223
+00:07:04,086 --> 00:07:05,097
+a common task
+
+224
+00:07:05,097 --> 00:07:08,034
+multiple times create a function for
+
+225
+00:07:08,034 --> 00:07:10,056
+that the primary point of functions is
+
+226
+00:07:10,056 --> 00:07:13,005
+to prevent code duplication we don't
+
+227
+00:07:13,005 --> 00:07:15,044
+want to just be copying and pasting code
+
+228
+00:07:15,044 --> 00:07:16,062
+everywhere
+
+229
+00:07:16,062 --> 00:07:18,024
+now if we go back to our code for just a
+
+230
+00:07:18,024 --> 00:07:19,068
+second you might have noticed something
+
+231
+00:07:19,068 --> 00:07:21,003
+a little bit odd about this main
+
+232
+00:07:21,003 --> 00:07:23,043
+function it says that it's return value
+
+233
+00:07:23,043 --> 00:07:25,077
+is int however the return keyword is
+
+234
+00:07:25,077 --> 00:07:28,038
+nowhere to be found and I'm obviously
+
+235
+00:07:28,038 --> 00:07:31,008
+not returning anything so if I specify a
+
+236
+00:07:31,008 --> 00:07:33,000
+return value do I actually need to
+
+237
+00:07:33,000 --> 00:07:34,098
+return something let's go ahead and try
+
+238
+00:07:34,098 --> 00:07:36,039
+and just do nothing in this multiply
+
+239
+00:07:36,039 --> 00:07:38,004
+function I'll hit control f7 to compile
+
+240
+00:07:38,004 --> 00:07:38,057
+my file
+
+241
+00:07:38,057 --> 00:07:39,072
+look at this I'm getting an error
+
+242
+00:07:39,072 --> 00:07:41,028
+telling me that multiply must return a
+
+243
+00:07:41,028 --> 00:07:41,088
+value
+
+244
+00:07:41,088 --> 00:07:43,038
+so do functions with the return type
+
+245
+00:07:43,038 --> 00:07:45,018
+actually need to return values the
+
+246
+00:07:45,018 --> 00:07:47,094
+answer is yes they do the main function
+
+247
+00:07:47,094 --> 00:07:50,019
+is actually a special function the main
+
+248
+00:07:50,019 --> 00:07:52,041
+function and only the main function is
+
+249
+00:07:52,041 --> 00:07:54,093
+exempt from this kind of must return a
+
+250
+00:07:54,093 --> 00:07:56,076
+value if you don't specify a return
+
+251
+00:07:56,076 --> 00:07:58,074
+value it will automatically assume that
+
+252
+00:07:58,074 --> 00:08:00,009
+you're returning zero so we'll be
+
+253
+00:08:00,009 --> 00:08:02,016
+identical to if I had written this this
+
+254
+00:08:02,016 --> 00:08:04,028
+is just a feature of modern CNC but lost
+
+255
+00:08:04,028 --> 00:08:06,030
+versions that lets you just keep your
+
+256
+00:08:06,030 --> 00:08:07,092
+code a little bit cleaner and just as
+
+257
+00:08:07,092 --> 00:08:09,069
+fun know that this must return a value
+
+258
+00:08:09,069 --> 00:08:11,070
+thing is actually something that only
+
+259
+00:08:11,070 --> 00:08:13,068
+applies in debug mode we compile in
+
+260
+00:08:13,068 --> 00:08:15,033
+release mode here you'll see that we
+
+261
+00:08:15,033 --> 00:08:16,095
+actually don't get an error that's not
+
+262
+00:08:16,095 --> 00:08:18,012
+to say that what we're doing here is
+
+263
+00:08:18,012 --> 00:08:20,025
+correct because if we actually do
+
+264
+00:08:20,025 --> 00:08:22,002
+capture that return value so to do
+
+265
+00:08:22,002 --> 00:08:23,034
+something we will get undefined behavior
+
+266
+00:08:23,034 --> 00:08:25,020
+it's just as the compiler won't actually
+
+267
+00:08:25,020 --> 00:08:26,013
+yell at us
+
+268
+00:08:26,013 --> 00:08:28,026
+however in debug mode with certain debug
+
+269
+00:08:28,026 --> 00:08:31,071
+compilation flags enabled we will get an
+
+270
+00:08:31,071 --> 00:08:33,060
+error which will just help us debug our
+
+271
+00:08:33,060 --> 00:08:35,055
+code because at no point should you be
+
+272
+00:08:35,055 --> 00:08:36,089
+writing a function
+
+273
+00:08:36,089 --> 00:08:38,012
+it's going to return something but
+
+274
+00:08:38,012 --> 00:08:40,034
+doesn't okay so that's pretty much a
+
+275
+00:08:40,034 --> 00:08:41,087
+basic introduction to functions
+
+276
+00:08:41,087 --> 00:08:43,091
+functions are really useful I'm going to
+
+277
+00:08:43,091 --> 00:08:45,056
+be writing a lot more of them in the
+
+278
+00:08:45,056 --> 00:08:47,075
+future every program is built from a
+
+279
+00:08:47,075 --> 00:08:49,064
+collection of functions so this is
+
+280
+00:08:49,064 --> 00:08:50,096
+really important stuff if you don't
+
+281
+00:08:50,096 --> 00:08:52,046
+think you fully understand how functions
+
+282
+00:08:52,046 --> 00:08:54,032
+work don't worry because throughout this
+
+283
+00:08:54,032 --> 00:08:55,082
+series we're going to be writing so many
+
+284
+00:08:55,082 --> 00:08:57,028
+functions that you're just going to get
+
+285
+00:08:57,028 --> 00:08:58,079
+used to it and the best way to learn is
+
+286
+00:08:58,079 --> 00:09:00,056
+of course to practice we also commonly
+
+287
+00:09:00,056 --> 00:09:02,078
+break up functions into declarations and
+
+288
+00:09:02,078 --> 00:09:04,076
+definitions so declarations we usually
+
+289
+00:09:04,076 --> 00:09:06,035
+store in header file and then
+
+290
+00:09:06,035 --> 00:09:08,027
+definitions we write in translation unit
+
+291
+00:09:08,027 --> 00:09:09,098
+or CPP files so now I'm going to make a
+
+292
+00:09:09,098 --> 00:09:11,093
+whole video dedicated to header files
+
+293
+00:09:11,093 --> 00:09:13,067
+and we're going to cover function
+
+294
+00:09:13,067 --> 00:09:15,050
+declarations in a header file in that
+
+295
+00:09:15,050 --> 00:09:17,051
+video so anyway guys I hope you enjoyed
+
+296
+00:09:17,051 --> 00:09:19,016
+this episode if you did please hit the
+
+297
+00:09:19,016 --> 00:09:20,060
+like button don't forget to follow me on
+
+298
+00:09:20,060 --> 00:09:22,070
+Twitter and Instagram and if you really
+
+299
+00:09:22,070 --> 00:09:23,096
+enjoy this video and you want to see
+
+300
+00:09:23,096 --> 00:09:26,033
+drafts of future videos early as well as
+
+301
+00:09:26,033 --> 00:09:27,083
+discuss what actually goes into these
+
+302
+00:09:27,083 --> 00:09:29,093
+videos you can support me on patreon
+
+303
+00:09:29,093 --> 00:09:31,046
+link will be in description below but
+
+304
+00:09:31,046 --> 00:09:34,047
+until next time guys goodbye
+
+305
+00:09:34,047 --> 00:09:45,070
+[Music]
+

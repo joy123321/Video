@@ -1,0 +1,170 @@
+[2023/1/29 21:08:45] [InitBiliDownload]: {"cookie":"string","cachePath":"C:\\Users\\Administrator\\Videos\\bilibili","parallel":1}
+[2023/1/29 21:08:49] [getVideoList]: Total: 0
+[2023/1/29 21:08:49] [stopLoadList]: []
+[2023/1/29 21:08:49] [getVideoList]: Total: 0
+[2023/1/29 21:10:31] [getVideoList]: Total: 0
+[2023/1/29 21:10:31] [getVideoList]: Total: 0
+[2023/1/29 21:10:39] [getVideoList]: Total: 0
+[2023/1/29 21:10:48] [getVideoList]: Total: 0
+[2023/1/29 21:13:02] [stopLoadList]: []
+[2023/1/29 21:13:02] [getVideoList]: Total: 0
+[2023/1/29 21:13:02] [updataConfig]: {"cookie":"buvid3=4350D9BDA835ABB43FBB1D8022102421cuBW/Qfi8waX/IYKe7sKQA; mobi_app=pc_electron; platform=web; device=win; device_id=032e02b4-0499-0599-cb06-c50700080009; innersign=0; b_nut=1666618293; b_lsid=3EA4A795_1840A30FED9; _uuid=BDC4F879-1065A-433C-10869-C96B9147104C793981infoc; fingerprint=307ff8d4de24a2fd958b35899638e834; buvid4=A7C792A3-9FE8-A60D-2E48-54630F0E728694106-022102421-cuBW/Qfi8waX/IYKe7sKQA%3D%3D; buvid_fp_plain=undefined; buvid_fp=307ff8d4de24a2fd958b35899638e834; SESSDATA=6637e573%2C1690549742%2Cee9d8%2A11; bili_jct=1281b58963f6da80fe14fb846f7e0d0e; DedeUserID=15570624; DedeUserID__ckMd5=bd3bca0658842c69; sid=f0vscyqv; PVID=5","cachePath":"D:\\video","parallel":1}
+[2023/1/29 21:13:02] [setConfig]: {"cookie":"buvid3=4350D9BDA835ABB43FBB1D8022102421cuBW/Qfi8waX/IYKe7sKQA; mobi_app=pc_electron; platform=web; device=win; device_id=032e02b4-0499-0599-cb06-c50700080009; innersign=0; b_nut=1666618293; b_lsid=3EA4A795_1840A30FED9; _uuid=BDC4F879-1065A-433C-10869-C96B9147104C793981infoc; fingerprint=307ff8d4de24a2fd958b35899638e834; buvid4=A7C792A3-9FE8-A60D-2E48-54630F0E728694106-022102421-cuBW/Qfi8waX/IYKe7sKQA%3D%3D; buvid_fp_plain=undefined; buvid_fp=307ff8d4de24a2fd958b35899638e834; SESSDATA=6637e573%2C1690549742%2Cee9d8%2A11; bili_jct=1281b58963f6da80fe14fb846f7e0d0e; DedeUserID=15570624; DedeUserID__ckMd5=bd3bca0658842c69; sid=f0vscyqv; PVID=5","cachePath":"D:\\video","parallel":1}
+[2023/1/29 21:13:02] [getVideoList]: Total: 0
+[2023/1/29 21:13:20] [getVideoList]: Total: 0
+[2023/1/29 21:13:24] [getVideoList]: Total: 0
+[2023/1/29 21:13:25] [appendLoadList]: [{"title":"06. How the C++ Compiler Works","cid":119058265}]
+[2023/1/29 21:13:25] [getVideoList]: Total: 1
+[2023/1/29 21:13:25] [startLoadList]: [{"title":"06. How the C++ Compiler Works","cid":119058265}]
+[2023/1/29 21:13:25] [loadPlayurl]: {"title":"06. How the C++ Compiler Works","cid":119058265}
+[2023/1/29 21:13:25] [startLoad]: {"title":"06. How the C++ Compiler Works","cid":119058265}
+[2023/1/29 21:13:25] [dmViewStart]: https://api.bilibili.com/x/v2/dm/web/view?type=1&oid=119058265&pid=68697716
+[2023/1/29 21:13:25] [dmStart]: https://api.bilibili.com/x/v2/dm/web/seg.so?type=1&oid=119058265&pid=68697716&segment_index=1
+[2023/1/29 21:13:25] [dmStart]: https://api.bilibili.com/x/v2/dm/web/seg.so?type=1&oid=119058265&pid=68697716&segment_index=2
+[2023/1/29 21:13:25] [dmStart]: https://api.bilibili.com/x/v2/dm/web/seg.so?type=1&oid=119058265&pid=68697716&segment_index=3
+[2023/1/29 21:13:25] [groupImgStart]: {"title":"06. How the C++ Compiler Works","cid":119058265,"url":"http://i0.hdslb.com/bfs/archive/cfa61df069e2f11dc4f8b6513f253777fb5b0175.jpg"}
+[2023/1/29 21:13:25] [imgStart]: {"title":"06. How the C++ Compiler Works","cid":119058265,"url":"http://i0.hdslb.com/bfs/archive/cfa61df069e2f11dc4f8b6513f253777fb5b0175.jpg"}
+[2023/1/29 21:13:25] [getVideoList]: Total: 1
+[2023/1/29 21:13:25] [dmEnd]: https://api.bilibili.com/x/v2/dm/web/seg.so?type=1&oid=119058265&pid=68697716&segment_index=3
+[2023/1/29 21:13:25] [dmViewEnd]: https://api.bilibili.com/x/v2/dm/web/view?type=1&oid=119058265&pid=68697716
+[2023/1/29 21:13:25] [dmEnd]: https://api.bilibili.com/x/v2/dm/web/seg.so?type=1&oid=119058265&pid=68697716&segment_index=2
+[2023/1/29 21:13:25] [dmEnd]: https://api.bilibili.com/x/v2/dm/web/seg.so?type=1&oid=119058265&pid=68697716&segment_index=1
+[2023/1/29 21:13:25] [checkHeader]: 119058265
+[2023/1/29 21:13:26] [checkHeader]: 119058265
+[2023/1/29 21:13:26] [playurlErr]: 119058265
+[2023/1/29 21:13:26] [videoLoadStart]: 开始下载视频
+[2023/1/29 21:13:26] [audioLoadStart]: 119058265
+[2023/1/29 21:13:38] [loadVideoEnd]: {"title":"06. How the C++ Compiler Works","cid":119058265}
+[2023/1/29 21:13:38] [videoClose]: video文件已关闭：{"title":"06. How the C++ Compiler Works","cid":119058265}
+[2023/1/29 21:13:41] [loadAudioEnd]: https://upos-sz-estgoss.bilivideo.com/upgcxcode/65/82/119058265/119058265_nb2-1-30280.m4s?e=ig8euxZM2rNcNbdlhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1675005218&gen=playurlv2&os=upos&oi=2876329609&trid=815428312b634460a76dae21a75f41b8u&mid=15570624&platform=pc&upsig=5924041fbf5dc401a9210d0b025ecc43&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=0&orderid=0,3&buvid=4350D9BDA835ABB43FBB1D8022102421cuBW/Qfi8waX/IYKe7sKQA&build=0&agrr=0&bw=16196&logo=80000000
+[2023/1/29 21:13:41] [cancel]: ["videoUrl119058265","audioUrl119058265"]
+[2023/1/29 21:13:41] [loadVideoAbort]: {"title":"06. How the C++ Compiler Works","cid":119058265}
+[2023/1/29 21:13:41] [loadAudioAbort]: 暂停下载视频: {"title":"06. How the C++ Compiler Works","cid":119058265}
+[2023/1/29 21:13:41] [audioClose]: audio文件已关闭：{"title":"06. How the C++ Compiler Works","cid":119058265}
+[2023/1/29 21:13:41] [destoryLoad]: {"title":"06. How the C++ Compiler Works","cid":119058265}
+[2023/1/29 21:13:41] [cancel]: []
+[2023/1/29 21:13:41] [getVideoList]: Total: 1
+[2023/1/29 21:13:42] [getVideoList]: Total: 1
+[2023/1/29 21:13:42] [completed]: {"title":"06. How the C++ Compiler Works","cid":119058265}
+[2023/1/29 21:13:42] [getVideoItem]: {"title":"06. How the C++ Compiler Works","cid":119058265}
+[2023/1/29 21:13:42] [getLocalPlayurl]: 119058265
+[2023/1/29 21:45:10] [getLocalPlayurl]: 119058265
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":995,"end":3606}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":908,"end":3531}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":0,"end":994}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":0,"end":907}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":3607,"end":463754}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3532,"end":85357}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":463755,"end":862958}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":862959,"end":1321556}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":1321557,"end":1708336}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":85358,"end":166324}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":1708337,"end":2085346}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":166325,"end":247538}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":247539,"end":328480}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":328481,"end":409165}
+[2023/1/29 21:45:11] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":409166,"end":490701}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":13984252,"end":14345416}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3000051,"end":3081141}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3081142,"end":3161706}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":14345417,"end":14701964}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":14701965,"end":15018224}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":15018225,"end":15353078}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":15353079,"end":15708236}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":15708237,"end":16061843}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":16061844,"end":16397193}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":16397194,"end":16724879}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":16724880,"end":17067372}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":17067373,"end":17464045}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":17464046,"end":17823901}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":17823902,"end":18217847}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":18217848,"end":18646590}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":18646591,"end":19111545}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":19111546,"end":19546076}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3161707,"end":3243195}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3243196,"end":3323787}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3323788,"end":3404589}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3404590,"end":3485854}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3485855,"end":3566525}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3566526,"end":3647457}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3647458,"end":3728783}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3728784,"end":3809626}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3809627,"end":3890425}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3890426,"end":3971588}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3971589,"end":4052417}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":4052418,"end":4133114}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":4133115,"end":4214063}
+[2023/1/29 21:45:13] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":4214064,"end":4295450}
+[2023/1/29 21:45:14] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":19546077,"end":19983019}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":24101427,"end":24370971}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":5671754,"end":5752674}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":5752675,"end":5833380}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":24370972,"end":24590377}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":24590378,"end":25097514}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":25097515,"end":25534074}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":25534075,"end":25958458}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":25958459,"end":26390541}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":26390542,"end":26847458}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":26847459,"end":27274466}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":27274467,"end":27791637}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":27791638,"end":28341496}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":28341497,"end":28881643}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":28881644,"end":29048385}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":29048386,"end":29182358}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":29182359,"end":29372713}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":29372714,"end":29687766}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":5833381,"end":5914481}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":5914482,"end":5995681}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":5995682,"end":6076083}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6076084,"end":6157356}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6157357,"end":6238213}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6238214,"end":6318831}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6318832,"end":6399967}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6399968,"end":6481045}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6481046,"end":6561612}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6561613,"end":6643083}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6643084,"end":6724093}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6724094,"end":6804895}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6804896,"end":6885889}
+[2023/1/29 21:45:15] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6885890,"end":6966814}
+[2023/1/29 21:50:37] [getLocalPlayurl]: 119058265
+[2023/1/29 21:50:37] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":995,"end":3606}
+[2023/1/29 21:50:37] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":908,"end":3531}
+[2023/1/29 21:50:37] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":0,"end":994}
+[2023/1/29 21:50:37] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":0,"end":907}
+[2023/1/29 21:50:37] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":3607,"end":463754}
+[2023/1/29 21:50:37] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":3532,"end":85357}
+[2023/1/29 21:50:37] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":463755,"end":862958}
+[2023/1/29 21:50:37] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":862959,"end":1321556}
+[2023/1/29 21:50:37] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":1321557,"end":1708336}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":24101427,"end":24370971}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":5671754,"end":5752674}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":5752675,"end":5833380}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":24370972,"end":24590377}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":24590378,"end":25097514}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":25097515,"end":25534074}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":25534075,"end":25958458}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":25958459,"end":26390541}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":26390542,"end":26847458}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":26847459,"end":27274466}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":27274467,"end":27791637}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":27791638,"end":28341496}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":28341497,"end":28881643}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":28881644,"end":29048385}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":29048386,"end":29182358}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":29182359,"end":29372713}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30080.m4s","start":29372714,"end":29687766}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":5833381,"end":5914481}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":5914482,"end":5995681}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":5995682,"end":6076083}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6076084,"end":6157356}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6157357,"end":6238213}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6238214,"end":6318831}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6318832,"end":6399967}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6399968,"end":6481045}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6481046,"end":6561612}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6561613,"end":6643083}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6643084,"end":6724093}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6724094,"end":6804895}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6804896,"end":6885889}
+[2023/1/29 21:50:38] [getRangeStreams]: {"cid":119058265,"fileName":"119058265_nb2-1-30280.m4s","start":6885890,"end":6966814}
